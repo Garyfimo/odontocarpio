@@ -1,0 +1,90 @@
+/*CSS DEL PLUGIN DE CLOUDSLIDER
+/* 
+    Created on : 08-feb-2014, 22:10:07
+    Author     : Miguel
+*/
+.cloudSlider{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.cloudSlider > .controls{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    font-size: 45px;
+    line-height: 40px;
+    margin:0;
+    padding: 0;
+    color: white;
+    z-index: 20;
+    text-align: center;
+}
+.cloudSlider > #prev{
+    top:50%;
+    left: 0;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.cloudSlider > #next{
+    top:50%;
+    right: 0;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.cloudSlider > li {
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0; 
+    padding: 0;
+    margin: 0;            
+}
+.cloudSlider > li > img {
+    width: 100%;
+    height: 100%;
+}
+.info{
+    position: absolute;
+    width: 520px;
+    height: 200px;
+    bottom: 0;
+    z-index: 20;
+    box-shadow: inset 0 0 35px black;
+}
+.info.red{
+    background-color: #920a0a;
+}
+.info.green{
+    background-color: #165202;
+}
+.info.blue{
+    background-color: #06266F;
+}
+.cloudSlider_aside{
+    background-color: #2e2e2e;
+    height: 100%;
+    overflow-y: auto;
+    float: left;
+    color: #f0f0f0;
+    text-align: justify;
+}
+.cloudSlider_aside > h3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.cloudSlider_aside > img {
+    height: auto;
+    width: 33%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.cloudSlider_aside > img:hover{
+    opacity: 1;
+}

@@ -1,0 +1,27 @@
+.blanqueamiento{
+    background-image: url(../img/servicios/blanqueamiento.jpg);   
+    background-position: center;
+}
+.corona{
+    background-image: url(../img/servicios/corona.jpg);
+}
+.estetica-dental{
+    background-image: url(../img/servicios/estetica_dental.png);
+}
+.implantologia{
+    background-image: url(../img/servicios/implantologia.jpg);
+}
+.odontopediatria{
+    background-image: url(../img/servicios/odontopediatria.jpg);  
+    background-position: left;
+}
+.ortodoncia{
+    background-image: url(../img/servicios/ortodoncia.jpg);
+}
+.periodontal{
+    background-image: url(../img/servicios/periodontal.jpg);
+}
+.profilaxis{
+    background-image: url(../img/servicios/profilaxis.jpg);
+    background-position: left;
+}

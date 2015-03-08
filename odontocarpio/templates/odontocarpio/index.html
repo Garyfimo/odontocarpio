@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    {% load staticfiles %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Centro Odontológico Odontocarpio</title>
+        <meta name="description" content="Odontocarpio es un centro odontológico particular especializado en la salud bucal y dental, contando con un staff de médicos altamente capacitados dispuestos a brindarle a usted el mejor servicio.">
+        <meta name="keywords" content="Odontología,Odontocarpio,dientes,dental,salud,brackets,lima,peru,surco">
+        <meta name="author" content="Bits&code">
+        <meta name="title" content="Centro Odontológico Odontocarpio"
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'css/cloudSlider.css' %}">
+        <link rel="stylesheet" href="{% static 'css/products.css' %}">
+        <link rel="stylesheet" href="{% static 'css/servicios.css' %}">
+        <link rel="stylesheet" href="{% static 'css/medicos.css' %}">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header><div class="wrapper"><img src="img/iconLogo.png" alt =""/><a href="#nosotros">NOSOTROS</a> | <a href="#servicios">SERVICIOS Y PRODUCTOS</a> | <a href="#citas">CITAS</a> | <a href="#contactenos">CONTÁCTENOS</a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a></div> </header>
+        <section id="slider">
+            <ul class="cloudSlider" id="mainSlider">
+                <li>
+                    <img src="img/principal/slide1.jpg" alt="">
+                    <div class="absolute">
+                        <h1 class="hero">Porque no sólo es estética, también es Salud</h1>
+                        <p class="subhero">Centro Odontológico Odontocarpio</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/principal/slide2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/principal/slide3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/principal/slide4.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="nosotros">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="center">
+                    <ul class="selector">
+                        <li onclick="switchBy('#mision', '#nosotros', ['#vision'])">NOSOTROS</li>
+                        <li onclick="switchBy('#vision', '#mision', ['#nosotros'])">MISIÓN</li>
+                        <li onclick="switchBy('#nosotros', '#vision', ['#mision'])">VISIÓN</li>                                   
+                    </ul>
+                </div>
+                <div class="s40p">
+                    <h1>NOSOTROS</h1>
+                    <hr/>
+                    <p>Somos una clínica destinada a brindar servicios odontológicos de calidad,  con un  staff profesional altamente preparado y calificado en sus diferentes especialidades con el respaldo de la tecnología y todo el profesionalismo que caracteriza a cada uno de nuestros doctores especialistas,  logrando así una atención personalizada para el mayor confort que usted y su familia necesita.
+                       </p>
+                </div><div class="s60p"><div class="bigCircle nosotrosCircle"></div> </div>
+            </div>
+        </section>
+        <section id="mision" style="display: none;">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="center">
+                    <ul class="selector">
+                        <li onclick="switchBy('#mision', '#nosotros', ['#vision'])">NOSOTROS</li>
+                        <li onclick="switchBy('#vision', '#mision', ['#nosotros'])">MISIÓN</li>
+                        <li onclick="switchBy('#nosotros', '#vision', ['#mision'])">VISIÓN</li>                                   
+                    </ul>
+                </div>
+                <div class="s40p">
+                    <h1>MISION</h1>
+                    <hr/>
+                    <p>Prestar una excelente atención a  nuestros pacientes a través de una práctica clínica innovadora en cada uno de nuestros tratamientos atendiendo así todas las necesidades para el cuidado de la imagen y bienestar en la salud bucal.</p>
+                </div><div class="s60p"><div class="bigCircle nosotrosCircle"></div> </div>
+            </div>
+        </section>
+        <section id="vision" style="display: none;">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="center">
+                    <ul class="selector">
+                        <li onclick="switchBy('#mision', '#nosotros', ['#vision'])">NOSOTROS</li>
+                        <li onclick="switchBy('#vision', '#mision', ['#nosotros'])">MISIÓN</li>
+                        <li onclick="switchBy('#nosotros', '#vision', ['#mision'])">VISIÓN</li>                                   
+                    </ul>
+                </div>
+                <div class="s40p">
+                    <h1>VISION</h1>
+                    <hr/>
+                    <p>Nuestra visión es ser la MEJOR ALTERNATIVA, con lo más avanzado en tecnología y con profesionales que reúnan los requisitos máximos de profesionalismo, para satisfacer al máximo las exigencias de nuestros pacientes e ir más allá de sus expectativas, deseando establecer una relación duradera con cada paciente basada en el tratamiento personalizado y orientado al detalle.</p>
+                </div><div class="s60p"><div class="bigCircle nosotrosCircle"></div> </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="center">
+                    <ul class="selector">
+                        <li onclick="switchBy('#productos', '#servicios')">SERVICIOS</li>
+                        <li onclick="switchBy('#servicios', '#productos')">PRODUCTOS</li>                                   
+                    </ul>
+                    <br/>
+                </div>
+                <ul class="cloudSlider" id="serviceSlider">
+                    <li>
+                        <div class="s40p">
+                            <h1>ESTETICA DENTAL</h1>
+                            <hr/>
+                            <p>La Estética Dental es la disciplina de la Odontología que se encarga de tratar todas aquellas alteraciones y patologías de la morfología bucodental para lograr un canon de belleza que se ajuste al ideal social de hoy en día.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle estetica-dental"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>BLANQUEAMIENTO</h1>
+                            <hr/>
+                            <p>Es un tratamiento dental que logra devolver el tono natural de los dientes, logrando estética dental y una mejor sonrisa.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle blanqueamiento"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>PERIODONCIA</h1>
+                            <hr/>
+                            <p>La periodoncia es la especialidad médico-quirúrgica de la Odontología que estudia la prevención, diagnóstico y tratamiento de las enfermedades y Condiciones que afectan los tejidos que dan soporte a los dientes. 
+                                Las principales enfermedades periodontales que afectan a una dentición son la Periodontitis y gingivitis.
+                            </p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle periodoncia"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>ORTODONCIA</h1>
+                            <hr/>
+                            <p>La ortodoncia es la rama de la odontología que se encarga de la alineación de los dientes y de la corrección de problemas de mordida, así como también de guiar la erupción de los dientes y el desarrollo de los maxilares produciendo así un equilibrio en el aparato bucal y por ende en la columna cervical y dorsal, así como una estética ideal del rostro.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle ortodoncia"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>ENDODONCIA</h1>
+                            <hr/>
+                            <p>Es más conocida como tratamiento de conducto. Es la prevención, diagnóstico y tratamiento de desordenes de la pulpa dental. Un tratamiento de conducto es una manera segura y efectiva de salvar un diente dañado que de otro modo tendría que ser extraído.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle endodoncia"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>IMPLANTOLOGÍA</h1>
+                            <hr/>
+                            <p>Los implantes orales de titanio son la mejor solución para reemplazar una o varias piezas dentarias perdidas.
+                                En Odontocarpio tenemos los materiales de la mas alta calidad, además de rigurosas practicas de higiene y esterilización los cuales garantizan el éxito y la seguridad de la cirugía.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle implantologia"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>REHABILITACION ORAL</h1>
+                            <hr/>
+                            <p>La rehabilitación oral es una especialidad dentro de la odontología que combina en forma integral las áreas de prótesis fija, prótesis removible, operatoria, oclusión e implantología, que realiza el diagnóstico y plan de tratamiento adecuado al paciente de alta complejidad que requiere recuperar su salud bucal a través de las técnicas más modernas de rehabilitación</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle "></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>CORONAS</h1>
+                            <hr/>
+                            <p>Una corona dental es un casquillo o funda que se coloca sobre el diente cubriéndolo para restaurar su forma, tamaño o para mejorar su aspecto. Estas están indicadas para Proteger un diente débil, preservar un diente quebrado, mantener los puentes en su lugar, y cubrir implantes dental.</p>
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle corona"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="s40p">
+                            <h1>PRÓTESIS DENTALES</h1>
+                            <hr/>
+                            <p>
+                                Las prótesis dentales reemplazan piezas dentales ausentes y pueden quitarse y volver a colocarse en la boca.
+                                Existen dos tipos:<br/>
+                                <b>Las prótesis dentales completas:</b><br/>
+                                Tienen una base de acrílico color rosado que se adapta sobre las encías. Las prótesis superiores cubren el paladar (el techo de la boca), mientras que las inferiores tienen forma de herradura para dejar libre la lengua.<br/>
+                                <b>Prótesis parcial:</b><br/>
+                                Es aquella que descansa sobre una montura de metal o también de un material completamente estético, hecho a base de resina reforzada que se sujeta a sus dientes naturales. Algunas veces se colocan coronas sobre los propios dientes y las mismas sirven de anclaje a la prótesis.
+
+                            </p>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>PUENTES</h1>
+                            <hr/>
+                            <p>Es un tratamiento que consiste en cubrir y proteger el espacio creado por la falta de un diente o de varios dientes.
+                                Un puente dental es más que un diente postizo con el apoyo de dos coronas que se utiliza para llenar el vacío existente producido por la ausencia de piezas dentales.
+                                <br/><b>TIPOS DE CORONAS Y PUENTES DENTALES</b>
+                            </p>
+                            <ul>
+                                <li>Coronas y puentes metal porcelana  </li>
+                                <li>Coronas y puentes de porcelana libre de metal</li>
+                                <li>Coronas y carillas  de zirconio </li>
+                                <li>Carillas de porcelana.</li>
+                            </ul>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>CIRUGIA DENTAL</h1>
+                            <hr/>
+                            <p>La cirugía oral es una de las especialidades más antiguas de la odontología, dedicada al diagnóstico y tratamiento de las enfermedades, traumatismos y defectos de las piezas dentarias, de los maxilares y de los tejidos blandos adyacentes que requieran una intervención quirúrgica.</p>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>DESTARTRAJE Y PROFILAXIS</h1>
+                            <hr/>
+                            <p>Es la limpieza de la superficie de los dientes en el consultorio odontológico con una copa de caucho y pasta profiláctica, se realiza diente por diente con movimientos circulares hasta remover la placa bacteriana de las superficies dentales, así como también la eliminación manual o eléctrica del sarro dental.</p>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle profilaxis"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>TRATAMIENTO PERIODONTAL</h1>
+                            <hr/>
+                            <p>Un tratamiento periodontal consiste desde la corrección de la técnica de higiene para el control de la placa bacteriana, hasta la eliminación de los factores desencadenantes de la misma. (Cálculos dentarios o sarro y bolsas periodontales).</p>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="s40p">
+                            <h1>ODONTOPEDIATRIA</h1>
+                            <hr/>
+                            <p>La odontopediatría es una parte de la odontología que se encarga del cuidado y mantenimiento de la salud oral del niño de una forma integral.
+                                En este sentido hay que destacar que el concepto odontopediátrico en nuestras clínicas está muy enfocado a la PREVENCIÓN; en los niños, ya desde muy temprana edad, el cuidado y vigilancia de los dientes es un factor fundamental para su futura salud dental.
+                            </p>
+
+                        </div><div class="s60p">
+                            <div class="bigCircle serviciosCircle odontopediatria"></div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section id="productos" style="display: none;">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="center">
+                    <ul class="selector">
+                        <li onclick="switchBy('#productos', '#servicios')">SERVICIOS</li>
+                        <li onclick="switchBy('#servicios', '#productos')">PRODUCTOS</li>                      
+                    </ul>
+                    <br/>
+                    <ul class="cloudSlider" id="productSlider">
+                        <li>
+                            <div class="s40p">
+                                <h1>ENJUAGUE BUCAL</h1>
+                                <hr/>
+                                <p>VITIS Orthodontic Colutorio es un enjuague de uso diario formulado especialmente para la higiene bucal diaria de los portadores de ortodoncia.
+                                    El colutorio asegura el cuidado integral de boca, dientes y encías durante el tratamiento ortodóntico.</p>
+                            </div><div class="s60p">
+                                <div class="bigCircle productosCircle producto1"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s40p">
+                                <h1>CEPILLO</h1>
+                                <hr/>
+                                <p>VITIS Orthodontic es un cepillo diseñado específicamente para eliminar el biofilm oral formado alrededor de los aparatos de ortodoncia.
+                                    El cepillo dispone de un cuello maleable, que se puede flexionar hasta adquirir la posición que mejor se adapta a la cavidad bucal. El mango es anatómico y con estrías antideslizantes.
+                                    El cepillo incorpora un capuchón protector que mantiene los filamentos agrupados y en condiciones óptimas de higiene.</p>
+                            </div><div class="s60p">
+                                <div class="bigCircle productosCircle producto2"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s40p">
+                                <h1>PASTA DENTAL</h1>
+                                <hr/>
+                                <p>VITIS Orthodontic Pasta Dentífrica es un dentífrico específicamente formulado para portadores de aparatos de ortodoncia.
+                                    Su uso diario permite disfrutar de una boca limpia y sana durante el tratamiento ortodóntico. Tiene un agradable sabor a manzana-menta. Y además, su innovadora textura favorece el rápido acceso entre los espacios de la ortodoncia. </p>
+                            </div><div class="s60p">
+                                <div class="bigCircle productosCircle producto3"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s40p">
+                                <h1>INTERPROX</h1>
+                                <hr/>
+                                <p>Los cepillos Interprox, gracias a sus filamentos de Tynex, limpian entre espacios y permiten detectar puntos de sangrado (filamentos blancos) y zona con placa bacteriana - biofilm oral -  (filamentos negros) </p>
+                            </div><div class="s60p">
+                                <div class="bigCircle productosCircle producto4"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="citas">
+            <div class="dummy80"></div>
+            <div class="wrapper">
+                <div class="s60p">
+                    <div class="bigCircle citasCircle"></div>
+                </div><div class="s40p">
+                    <h1>CITAS</h1>
+                    <hr class="hralt"/>
+                    <p>
+                        <span>Correo:</span>
+                        <input type="email" id="e-mail" />
+                    </p>
+                    <p>
+                        <span>Telefono:</span>
+                        <input type="tel" id="telephone" />
+                    </p>
+                    <p>
+                        <span>Nombre:</span>
+                        <input type="text" id="name" />
+                    </p>
+                    <p>
+                        <span>Doctor:</span>
+                        <select id="doctor">
+                            <option value="ruesta">Pamela Ruesta</option>
+                            <option value="carpio">Saulo Carpio</option>
+                            <option value="bernal">Gonzalo Bernal</option>
+                            <option value="oviedo">Anaclaudia Oviedo</option>
+                        </select>
+                    </p>
+                    <p><span>Día:</span> 
+                        <select id="day">
+                            <option></option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>Hora:</span>
+                        <select id="hour">
+                            <option></option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>Motivo:</span>
+                        <textarea id="message"></textarea>
+                    </p>
+                    <p class="submit"><button type="button" onclick="solicitarCita()">Solicitar Cita</button></p>
+                </div>
+            </div>
+        </section>
+        <section id="contactenos">
+            <div class="about">
+                <div class="dummy80"></div>
+                <div class="wrapper">
+                    <ul class="cloudSlider" id="staffSlider">
+                        <li>
+                            <div class="s30p">
+                                <div class="tinyCircle contactenosCircle carpio"></div>
+                            </div><div class="s70p">
+                                <h1>Dr. Saulo Carpio Medina</h1>
+                                <hr class="hralt gray"/>
+                                <p class="justify">
+                                    Rehabilitación oral y Estética Dental<br/>
+                                    C.O.P : 22637<br/>
+                                    Graduado de la Universidad San Martin de Porres<br/>
+                                    Postgrado en Rehabilitación Oral<br/>
+                                    Cursos nacionales e internacionales en rehabilitación oral y estética dental<br/>
+
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s30p">
+                                <div class="tinyCircle contactenosCircle oliva"></div>
+                            </div><div class="s70p">
+                                <h1>Dra. Elizabeth Oliva Baca</h1>
+                                <hr class="hralt gray"/>
+                                <p class="justify">
+                                    Ortodoncia<br/>
+                                    C.O.P : 22639<br/>
+                                    Graduada de la Universidad San Martin de Porres<br/>
+                                    Postgrado en Ortodoncia y Ortopedia Maxilar<br/>
+                                    Cursos nacionales e internacionales en Ortodoncia y Ortopedia Maxilar.
+
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s30p">
+                                <div class="tinyCircle contactenosCircle bernal"></div>
+                            </div><div class="s70p">
+                                <h1>Dr. Gonzalo Bernal Santolalla</h1>
+                                <hr class="hralt gray"/>
+                                <p class="justify">
+                                    Rehabilitación oral y Estética Dental<br/>
+                                    C.O.P : 22256<br/>
+                                    Graduado de la Universidad San Martin de Porres<br/>
+                                    Diplomado en rehabilitación oral y estética dental<br/>
+                                    Cursos nacionales e internacionales en rehabilitación oral y estética dental
+
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s30p">
+                                <div class="tinyCircle contactenosCircle ruesta"></div>
+                            </div><div class="s70p">
+                                <h1>Dra. Pamela Ruesta Giove</h1>
+                                <hr class="hralt gray"/>
+                                <p class="justify">
+                                    Odontología Integral<br/>
+                                    C.O.P : 33011<br/>
+                                    Graduada de la Universidad San Martin de Porres<br/>
+                                    Cursos nacionales en rehabilitación oral y estética dental
+
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="s30p">
+                                <div class="tinyCircle contactenosCircle oviedo"></div>
+                            </div><div class="s70p">
+                                <h1>Dra. Anaclaudia Oviedo Torres</h1>
+                                <hr class="hralt gray"/>
+                                <p class="justify">
+                                    Odontología Integral<br/>
+                                    C.O.P : 33002<br/>
+                                    Graduada de la Universidad San Martin de Porres<br/>
+                                    Cursos nacionales en rehabilitación oral y odontopediatría
+
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3900.520589119049!2d-76.98512869999999!3d-12.1449194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b86b7d5dfc31%3A0xf083a4526502015d!2sCalle+Jr.Loma+de+las+Clivias%2C+Santiago+de+Surco+15039!5e0!3m2!1ses-419!2spe!4v1412003453549" frameborder="0" style="border:0"></iframe>
+                <div>
+                    <h2>Encuéntranos en</h2>
+                    <p><span>Dirección:</span> Jr. Lomas de Las Clivias 130 Surco - Perú</p>
+                    <p><span>Telef:</span> (511) 282-3091</p>
+                    <p><span>Claro:</span> (511) 992-602-133</p>
+                    <p><span>Nextel:</span> 98135*7384</p>
+                </div>
+            </div>
+        </section>
+        <footer> Odontocarpio - 2014 Todos los derechos reservados <span class="aquamark">Powered by: Bits&Code</span></footer>
+        <!-- ZONA DE POPUP -->
+        <section role="popup" >
+            <article role="window">
+                <div class="window-header">
+                    <h1>Suscríbete a nuestra Web</h1>
+                    <button type="button" onclick="popOut()">&times;</button>
+                </div>
+                <div class="window-body">
+                    <img src="img/vectoricon.png" alt="" />
+                    <p>Si estás interesado en recibir novedades de nosotros, ponte en contacto! escribe tus datos en los cuadros de abajo y te mantendremos informado
+                        <input type="text" id="name-suscribe" placeholder="Nombres y Apellidos" />
+                        <input type="tel" id="tel-suscribe" placeholder="Numero de Telefono" />
+                        <input type="email" id="e-mail-suscribe" placeholder="Dirección de correo" />
+                    </p>
+                </div>
+                <div class="window-footer">
+                    <button type="button" onclick="sendSuscribe()">SUSCRIBIRSE</button>
+                </div>
+            </article>
+        </section>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/jquery.cloud_slider.js' %}"></script>
+        <script src="{% static 'js/citas.js' %}"></script>
+        <script>
+                            $(document).ready(function() {
+                                $(function() {
+                                    $('a[href*=#]:not([href=#])').click(function() {
+                                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                                            var target = $(this.hash);
+                                            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                                            if (target.length) {
+                                                $('html,body').animate({
+                                                    scrollTop: target.offset().top
+                                                }, 1000);
+                                                return false;
+                                            }
+                                        }
+                                    });
+                                });
+
+                                $("#mainSlider").cloudSlider({width: "100%", height: "100%", backgroundmode: true, controls: true, duration: 6000, autoplay: true, gallerymode: false});
+                                $("#serviceSlider").cloudSlider({width: "100%", height: "auto", relativemode: true, outercontrols: true, backgroundmode: true, controls: true, duration: 6000, autoplay: false, gallerymode: false});
+                                $("#productSlider").cloudSlider({width: "100%", height: "auto", relativemode: true, outercontrols: true, backgroundmode: true, controls: true, duration: 6000, autoplay: false, gallerymode: false});
+                                $("#staffSlider").cloudSlider({width: "100%", height: "auto", relativemode: true, outercontrols: true, backgroundmode: true, controls: true, duration: 6000, autoplay: false, gallerymode: false});
+                            });
+                            $("#doctor").change(function() {
+                                fillDayByDoctor($("#doctor option:selected").val());
+                                fillHourByDayAndDoctor($("#doctor option:selected").val(),$("#day option:selected").text()); 
+                            });
+                            $("#day").change(function(){
+                                fillHourByDayAndDoctor($("#doctor option:selected").val(),$("#day option:selected").text()); 
+                            });
+                            fillDayByDoctor("ruesta");
+                            fillHourByDayAndDoctor("ruesta", "Lunes");
+        </script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            (function(d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = '//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
+        </script>
+    </body>
+</html>
