@@ -61,10 +61,10 @@ WSGI_APPLICATION = 'odontocarpio.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ddv2cpd4liigd2',                      # Or path to database file if using sqlite3.
+        'NAME': 'd643tk2hd5csn7',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'hrfdarreafxhta',
-        'PASSWORD': 'uU4h8mzWSKhE-zjEIPyV12aLku',
+        'USER': 'cmiilsgmcntumv',
+        'PASSWORD': 'TqBWpNE16Hneub5u-HJd7LhCxj',
         'HOST': 'ec2-23-21-183-70.compute-1.amazonaws.com',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
         'PORT': '5432',                      # Set to empty string for default.
         }
