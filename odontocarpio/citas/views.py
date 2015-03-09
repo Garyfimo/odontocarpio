@@ -1,5 +1,9 @@
 from django.shortcuts import render
-
+from .models import Producto
 # Create your views here.
 def home(request):
-	return render(request,'odontocarpio/index.html')
+	lista_productos = Producto.objects.all()
+	context = {
+		'productos' : lista_productos,
+	}
+	return render(request,'odontocarpio/index.html',context)

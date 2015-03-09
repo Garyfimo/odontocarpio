@@ -285,46 +285,19 @@
                     </ul>
                     <br/>
                     <ul class="cloudSlider" id="productSlider">
+                        {% if productos %}
+                        {% for producto in productos %}
                         <li>
                             <div class="s40p">
                                 <h1>ENJUAGUE BUCAL</h1>
                                 <hr/>
-                                <p>VITIS Orthodontic Colutorio es un enjuague de uso diario formulado especialmente para la higiene bucal diaria de los portadores de ortodoncia.
-                                    El colutorio asegura el cuidado integral de boca, dientes y encías durante el tratamiento ortodóntico.</p>
+                                <p>{{ producto.descripcion }}</p>
                             </div><div class="s60p">
-                                <div class="bigCircle productosCircle producto1"></div>
+                                <div class="bigCircle productosCircle"><img src="{{ producto.url_imagen }}"/></div>
                             </div>
                         </li>
-                        <li>
-                            <div class="s40p">
-                                <h1>CEPILLO</h1>
-                                <hr/>
-                                <p>VITIS Orthodontic es un cepillo diseñado específicamente para eliminar el biofilm oral formado alrededor de los aparatos de ortodoncia.
-                                    El cepillo dispone de un cuello maleable, que se puede flexionar hasta adquirir la posición que mejor se adapta a la cavidad bucal. El mango es anatómico y con estrías antideslizantes.
-                                    El cepillo incorpora un capuchón protector que mantiene los filamentos agrupados y en condiciones óptimas de higiene.</p>
-                            </div><div class="s60p">
-                                <div class="bigCircle productosCircle producto2"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="s40p">
-                                <h1>PASTA DENTAL</h1>
-                                <hr/>
-                                <p>VITIS Orthodontic Pasta Dentífrica es un dentífrico específicamente formulado para portadores de aparatos de ortodoncia.
-                                    Su uso diario permite disfrutar de una boca limpia y sana durante el tratamiento ortodóntico. Tiene un agradable sabor a manzana-menta. Y además, su innovadora textura favorece el rápido acceso entre los espacios de la ortodoncia. </p>
-                            </div><div class="s60p">
-                                <div class="bigCircle productosCircle producto3"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="s40p">
-                                <h1>INTERPROX</h1>
-                                <hr/>
-                                <p>Los cepillos Interprox, gracias a sus filamentos de Tynex, limpian entre espacios y permiten detectar puntos de sangrado (filamentos blancos) y zona con placa bacteriana - biofilm oral -  (filamentos negros) </p>
-                            </div><div class="s60p">
-                                <div class="bigCircle productosCircle producto4"></div>
-                            </div>
-                        </li>
+                        {% endfor %}
+                        {% endif %}
                     </ul>
                 </div>
             </div>

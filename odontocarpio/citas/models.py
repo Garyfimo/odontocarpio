@@ -14,13 +14,15 @@ class Banner(models.Model):
 	url_imagen = models.URLField(null=True,max_length=250)
 
 class Producto(models.Model):
-	descripcion = models.CharField(max_length=450)
+	titulo = models.CharField(max_length=50)
+	descripcion = models.TextField(max_length=450)
 	url_imagen = models.URLField(null=True,max_length=250)
 	def __unicode__(self):
 		return self.descripcion
 
 class Servicio(models.Model):
-	descripcion = models.CharField(max_length=450)
+	titulo = models.CharField(max_length=50)
+	descripcion = models.TextField(max_length=450)
 	url_imagen = models.URLField(null=True,max_length=250)
 	def __unicode__(self):
 		return self.descripcion
