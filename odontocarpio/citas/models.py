@@ -7,6 +7,7 @@ class Doctor(models.Model):
 	cop = models.CharField(max_length=20)
 	universidad = models.CharField(max_length=150)
 	cursos = models.CharField(max_length=250)
+	url_imagen = models.URLField(null=True,max_length=250)
 	def __unicode__(self):
 		return self.nombre
 
