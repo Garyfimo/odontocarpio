@@ -3,10 +3,10 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    {% load staticfiles %}
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        {% load staticfiles %}
         <title>Centro Odontológico Odontocarpio</title>
         <meta name="description" content="Odontocarpio es un centro odontológico particular especializado en la salud bucal y dental, contando con un staff de médicos altamente capacitados dispuestos a brindarle a usted el mejor servicio.">
         <meta name="keywords" content="Odontología,Odontocarpio,dientes,dental,salud,brackets,lima,peru,surco">
@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="{% static 'css/products.css' %}">
         <link rel="stylesheet" href="{% static 'css/servicios.css' %}">
         <link rel="stylesheet" href="{% static 'css/medicos.css' %}">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -31,7 +31,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header><div class="wrapper"><img src="img/iconLogo.png" alt =""/><a href="#nosotros">NOSOTROS</a> | <a href="#servicios">SERVICIOS Y PRODUCTOS</a> | <a href="#citas">CITAS</a> | <a href="#contactenos">CONTÁCTENOS</a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a></div> </header>
+        <header><div class="wrapper"><img src="img/iconLogo.png" alt =""/><a href="#nosotros">NOSOTROS</a> | <a href="#servicios">SERVICIOS Y PRODUCTOS</a> | <a href="#citas">CITAS</a> | <a href="#contactenos">CONTÁCTENOS</a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="img/facebook.png" alt="facebook"/></div></a> </header>
         <section id="slider">
             <ul class="cloudSlider" id="mainSlider">
                 <li>
