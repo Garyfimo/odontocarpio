@@ -20,9 +20,9 @@ STATIC_ROOT = os.path.join(os.getcwd(), "staticfiles")
 SECRET_KEY = '^(ir$76x*thguz5wj3hizo6tx@eao%+ed4#2c)u8edi9w$jlo#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
