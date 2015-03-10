@@ -33,26 +33,17 @@
 
         <!-- Add your site or application content here -->
         <header><div class="wrapper"><img src="http://i.imgur.com/gKlcyIt.png" alt =""/><a href="#nosotros">NOSOTROS</a> | <a href="#servicios">SERVICIOS Y PRODUCTOS</a> | <a href="#citas">CITAS</a> | <a href="#contactenos">CONTÁCTENOS</a> <a href="http://facebook.com/odontocarpio"><div class="social"><img src="http://i.imgur.com/WANbeSu.png" png="facebook"/></div></a> </header>
+        {% if banners %}
         <section id="slider">
             <ul class="cloudSlider" id="mainSlider">
+                {% for banner in banners %}
                 <li>
-                    <img src="img/principal/slide1.jpg" alt="">
-                    <div class="absolute">
-                        <h1 class="hero">Porque no sólo es estética, también es Salud</h1>
-                        <p class="subhero">Centro Odontológico Odontocarpio</p>
-                    </div>
+                    <img src="{{ banner.url_imagen }}" alt="">
                 </li>
-                <li>
-                    <img src="img/principal/slide2.jpg" alt="">
-                </li>
-                <li>
-                    <img src="img/principal/slide3.jpg" alt="">
-                </li>
-                <li>
-                    <img src="img/principal/slide4.jpg" alt="">
-                </li>
+                {% endfor %}
             </ul>
         </section>
+        {% endif %}
         <section id="nosotros">
             <div class="dummy80"></div>
             <div class="wrapper">
@@ -213,84 +204,24 @@
                 <div class="dummy80"></div>
                 <div class="wrapper">
                     <ul class="cloudSlider" id="staffSlider">
+                        {% if doctores %}
+                        {% for doctor in doctores %}
                         <li>
                             <div class="s30p">
-                                <div class="tinyCircle contactenosCircle carpio"></div>
+                                <div class="tinyCircle contactenosCircle" style="background-image: url({{ doctor.url_imagen }});background-position: top;"></div>
                             </div><div class="s70p">
-                                <h1>Dr. Saulo Carpio Medina</h1>
+                                <h1>{{ doctor.nombre }}</h1>
                                 <hr class="hralt gray"/>
                                 <p class="justify">
-                                    Rehabilitación oral y Estética Dental<br/>
-                                    C.O.P : 22637<br/>
-                                    Graduado de la Universidad San Martin de Porres<br/>
-                                    Postgrado en Rehabilitación Oral<br/>
-                                    Cursos nacionales e internacionales en rehabilitación oral y estética dental<br/>
-
+                                    {{ doctor.especialidad }}<br/>
+                                    {{ doctor.cop }}<br/>
+                                    {{ doctor.universidad }}<br/>
+                                    {{ doctor.cursos }}<br/>
                                 </p>
                             </div>
                         </li>
-                        <li>
-                            <div class="s30p">
-                                <div class="tinyCircle contactenosCircle oliva"></div>
-                            </div><div class="s70p">
-                                <h1>Dra. Elizabeth Oliva Baca</h1>
-                                <hr class="hralt gray"/>
-                                <p class="justify">
-                                    Ortodoncia<br/>
-                                    C.O.P : 22639<br/>
-                                    Graduada de la Universidad San Martin de Porres<br/>
-                                    Postgrado en Ortodoncia y Ortopedia Maxilar<br/>
-                                    Cursos nacionales e internacionales en Ortodoncia y Ortopedia Maxilar.
-
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="s30p">
-                                <div class="tinyCircle contactenosCircle bernal"></div>
-                            </div><div class="s70p">
-                                <h1>Dr. Gonzalo Bernal Santolalla</h1>
-                                <hr class="hralt gray"/>
-                                <p class="justify">
-                                    Rehabilitación oral y Estética Dental<br/>
-                                    C.O.P : 22256<br/>
-                                    Graduado de la Universidad San Martin de Porres<br/>
-                                    Diplomado en rehabilitación oral y estética dental<br/>
-                                    Cursos nacionales e internacionales en rehabilitación oral y estética dental
-
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="s30p">
-                                <div class="tinyCircle contactenosCircle ruesta"></div>
-                            </div><div class="s70p">
-                                <h1>Dra. Pamela Ruesta Giove</h1>
-                                <hr class="hralt gray"/>
-                                <p class="justify">
-                                    Odontología Integral<br/>
-                                    C.O.P : 33011<br/>
-                                    Graduada de la Universidad San Martin de Porres<br/>
-                                    Cursos nacionales en rehabilitación oral y estética dental
-
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="s30p">
-                                <div class="tinyCircle contactenosCircle oviedo"></div>
-                            </div><div class="s70p">
-                                <h1>Dra. Anaclaudia Oviedo Torres</h1>
-                                <hr class="hralt gray"/>
-                                <p class="justify">
-                                    Odontología Integral<br/>
-                                    C.O.P : 33002<br/>
-                                    Graduada de la Universidad San Martin de Porres<br/>
-                                    Cursos nacionales en rehabilitación oral y odontopediatría
-
-                                </p>
-                            </div>
-                        </li>
+                        {% endfor %}
+                        {% endif %}
                     </ul>
                 </div>
             </div>
@@ -314,7 +245,7 @@
                     <button type="button" onclick="popOut()">&times;</button>
                 </div>
                 <div class="window-body">
-                    <img src="img/vectoricon.png" alt="" />
+                    <img src="http://i.imgur.com/QxDgh8v.png" alt="" />
                     <p>Si estás interesado en recibir novedades de nosotros, ponte en contacto! escribe tus datos en los cuadros de abajo y te mantendremos informado
                         <input type="text" id="name-suscribe" placeholder="Nombres y Apellidos" />
                         <input type="tel" id="tel-suscribe" placeholder="Numero de Telefono" />
