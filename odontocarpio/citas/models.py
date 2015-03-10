@@ -27,3 +27,10 @@ class Servicio(models.Model):
 	url_imagen = models.URLField(null=True,max_length=250)
 	def __unicode__(self):
 		return self.descripcion
+
+class Cliente(models.Model):
+	nombre = models.CharField(max_length=250)
+	telefono = models.CharField(max_length=11)
+	mail = models.EmailField(max_length=75)
+	def __unicode__(self):
+		return self.nombre

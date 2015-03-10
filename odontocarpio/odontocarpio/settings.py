@@ -13,6 +13,15 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(os.getcwd(), "staticfiles")
 
+from .email_info import EMAIL_USE_TLS, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_HOST,EMAIL_PORT
+
+EMAIL_USE_TLS = EMAIL_USE_TLS
+EMAIL_HOST_USER = EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+EMAIL_HOST = EMAIL_HOST
+EMAIL_PORT = EMAIL_PORT
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -24,7 +33,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','odontocarpio.heroku.com']
 
 
 # Application definition
